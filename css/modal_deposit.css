@@ -16,6 +16,7 @@ html {
   overflow: auto;
 }
 
+
 /* .modal {
  
   background: var(--gray-gray-900, #0e0a01);
@@ -201,6 +202,33 @@ html {
   font-size: 14px;
   table-layout: fixed;
 }
+.filter__header__adaptive {
+  display: none;
+  margin: 0 -8px;
+  flex-direction: column;
+  gap: 32px;
+  padding: 19px 24px;
+  background-color: #1f1704;
+  border-radius: 16px;
+}
+
+.filter__header__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__item__title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #a68e62;
+}
+
+.filter__item__desc {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+
 
 .history-table thead {
   background-color: #2a1f11;
@@ -580,6 +608,14 @@ html {
 }
 
 @media (max-width: 650px) {
+  .history-table{
+    display: none;
+  }
+  .filter__header__adaptive {
+    display: flex;
+    margin: 0 16px 24px 16px;
+  }
+
   .hidden{
     display: none;
     opacity: 0;
